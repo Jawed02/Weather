@@ -37,7 +37,7 @@ function getWeather(){
         // console.log(country);
         // console.log(condition);
    
-        var time_zone = "http://api.weatherapi.com/v1/astronomy.json?key=dbda815ce1f644a4b5c91555210210&q=" + city + "&dt=" + date;
+        var time_zone = "https://api.weatherapi.com/v1/astronomy.json?key=dbda815ce1f644a4b5c91555210210&q=" + city + "&dt=" + date;
         
         fetch(time_zone)
     .then(function(response){
