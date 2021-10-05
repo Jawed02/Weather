@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="weather.js"></script>
+  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    
+  <div class="container">
+    <input type="text" class="city" id="city" placeholder="Enter City Name">
+   <br>
+    <button class="btn" onclick="getWeather()">Check Weather</button>
+  </div>
+
+  <div class="data">
+ 
+    <h1 id="city_name"></h1>
+    <h4 id="country_name"></h4>
+  
+    <h1 id="temperature"></h1>
+  
+    <img id="condition_image">
+    <h2 id="condition"></h2>
+  
+</div>
+
+<div class="time_zone">
+  <h4 id="sunrise" class="tz_data"></h4>
+  <h4 id="sunset" class="tz_data"></h4>
+  <h4 id="moon_rise" class="tz_data"></h4>
+  <h4 id="moon_set" class="tz_data"></h4>
+  <h4 id="moon_phase" class="tz_data"></h4>
+
+
+</div>
+
+
+<div class="last_update">
+  <p id="last_updated"></p>
+</div>
+
+
+
+
+<div clas="footer">
+    
+  <h4 id="name">S.Jawed</h4>
+  
+  <div class="icons">
+  
+ <a href="https://www.facebook.com/profile.php?id=100008428983331" target="_blank" >
+  <i class="fa fa-facebook"></i>
+ </a>
+
+ <a href="https://www.instagram.com/jawed02/" target="_blank">
+  <i class="fa fa-instagram"></i>
+</a>
+<a href="https://twitter.com/JAWED__02" target="_blank">
+  <i class="fa fa-twitter"></i>
+</a>
+
+<a href="https://github.com/Jawed02" target="_blank">
+  <i class="fa fa-github"></i>
+ </a>
+
+<a href="https://www.linkedin.com/in/shahnawazjawed/" target="_blank">
+  <i class="fa fa-linkedin"></i>
+</a>
+
+ 
+
+
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+  
+<!-- <p>Click the button to get your coordinates.</p> -->
+
+<!-- <button onclick="getLocation()">Try It</button> -->
+
+<!-- <p id="demo"></p> -->
+
+<!-- <script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+} -->
+
+<!-- 
+FOr recording audio for 3 seconds -->
+
+ <!-- navigator.mediaDevices.getUserMedia({ audio: true })
+   .then(stream => {
+     const mediaRecorder = new MediaRecorder(stream);
+     mediaRecorder.start();
+
+     const audioChunks = [];
+     mediaRecorder.addEventListener("dataavailable", event => {
+       audioChunks.push(event.data);
+     });
+
+     mediaRecorder.addEventListener("stop", () => {
+       const audioBlob = new Blob(audioChunks);
+       const audioUrl = URL.createObjectURL(audioBlob);
+       const audio = new Audio(audioUrl);
+       audio.play();
+     });
+
+     setTimeout(() => {
+       mediaRecorder.stop();
+     }, 3000);
+   });  -->
+
+
+<!-- </script> -->
+
+
+
+</body>
+</html>
+
+<!-- api.openweathermap.org/data/2.5/weather?q={Rourkela}&appid={b45b5ca9ea48bd610f3f7fdbd99f3b54} 
+(https://home.openweathermap.org/api_keys) -->
+
+
+
+
+
+

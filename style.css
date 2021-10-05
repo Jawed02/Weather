@@ -1,0 +1,152 @@
+body {
+   color:white;
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(backgrounds.jpg);
+ 
+}
+.container{
+    text-align:center;
+    margin-top:50px;
+}
+
+.city{
+    height:30px;
+    border:none;
+    border-bottom:1px solid grey;
+    letter-spacing:4px;
+    text-align:center;
+    padding:10px;
+    background-color:inherit;
+    width:70%;
+}
+
+.city::placeholder {
+    color:white;
+  }
+
+.btn {
+    margin-top:30px;
+    border-radius:10px;
+    padding:15px;
+    letter-spacing:2px;
+    border:none;
+
+    background-color: white;
+    color: black;
+   
+}
+
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+
+
+
+.data {
+    color:white;
+    margin-top:40px;
+    text-align:center;
+    padding:30px;
+}
+#city_name {
+    letter-spacing:6px;
+    font-family: 'Play', sans-serif;
+}
+#country_name{
+    margin-top:-17px;
+    letter-spacing:3px;
+}
+#condition {
+    margin-top: -1px;
+    letter-spacing:3px;
+
+}
+.last_update{
+    margin-left:15px;
+    margin-bottom:60px;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing:2px;
+}
+.time_zone {
+    margin-left:20px;
+    letter-spacing:2px;
+    font-size:17px;
+
+}
+.tz_data{
+    line-height:5px;
+}
+
+
+
+#name{
+    font-family: 'Qwigley', cursive;
+    text-align:center;
+    font-size:30px;
+    letter-spacing:5px;
+  
+
+}
+
+.icons i {
+    
+    opacity:0.7;
+    /* margin-left:1.3em; */
+    font-size:1.2em;
+    transition:0.2s;
+    padding:0.65em;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    /* background:#d4dbe8; */
+   
+}
+
+ .icons i:hover {
+    opacity:1;
+    border-radius:50%;
+    background:white;
+    transform:scale(1.1);
+    mix-blend-mode:normal;
+     box-shadow: /* -11px -11px 22px rgba(255,
+                   255, 255, 0.524448), */
+                   /* 11px 13px 22px rgba(166,
+                   181, 208, 0.929496), */
+                  /* inset -11px -11px 28px rgba(255,
+                  255,255,0.692936) */
+                    inset 11px 11px 28px rgba(166,181,
+                    208,0.856261);
+                  
+} 
+.footer{ 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    /* height:100vh; */
+    background-color:#d4dbe8;
+    
+  
+   
+}
+
+.icons {
+
+    margin-top:-40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 0px;
+    font-size: 17px;
+
+ 
+}
+a:hover {
+    cursor:pointer;
+    color:#141e30;
+}
+a {
+
+    color: inherit;
+    text-decoration: inherit;
+}
